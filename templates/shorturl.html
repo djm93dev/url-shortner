@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}URL Shortener{% endblock %}
+
+{% block content %}
+    <h2><a href="http://127.0.0.1:5500/{{short_url_display}}">http://127.0.0.1:5500/{{short_url_display}}</a></h2>
+<div id="btns">
+    <button id="back" onclick="window.location.href='http://127.00.1:5500/'">BACK</button>
+    <button id="copy" onclick="copy()">COPY</button>
+</div>
+{% endblock %}

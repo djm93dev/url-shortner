@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1>
+            URL Shortener</h1>
+        {% block content%}
+        {% endblock %}
+    </div>
+
+    <script src="{{ url_for('static',filename='index.js') }}"></script>
+  </body>
+</body>
+</html>
